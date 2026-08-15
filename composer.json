@@ -1,0 +1,26 @@
+{
+    "name": "eka/client",
+    "description": "Energykidsacademy.net",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yohann KIPFER",
+            "email": "yohann-3396@hotmail.fr",
+            "homepage": "https://github.com/YohannKIPFER"
+        },
+        {
+            "name": "Sandy Razafitrimo",
+            "email": "sandyrazafitrimo@gmail.com",
+            "homepage": "https://etsik.com/"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "~6.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.2"
+    }
+}

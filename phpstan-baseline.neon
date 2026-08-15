@@ -1,0 +1,13 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Path in include\(\) "/home/nitro/Sites/eka/EnergyAcademyClient/\.phpstan/\.\./view/render/blockTemplate/_floatingActionButton\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: application/helper/buttons.php
+
+		-
+			message: '#^Path in include\(\) "/home/nitro/Sites/eka/EnergyAcademyClient/\.phpstan/\.\./view/render/blockTemplate/_datePickerNavigation\.php" is not a file or it does not exist\.$#'
+			identifier: include.fileNotFound
+			count: 1
+			path: application/helper/dates.php

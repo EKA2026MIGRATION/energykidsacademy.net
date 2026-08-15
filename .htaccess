@@ -1,0 +1,11 @@
+# Block direct HTTP access to config/secrets/logs — the rewrite rule below only
+# skips *existing files*, so without this they're directly downloadable by URL.
+<FilesMatch "^(\.env|config\.ini|error_log|log\.csv)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.+)$ index.php?r=$1 [QSA,L]
+</IfModule>

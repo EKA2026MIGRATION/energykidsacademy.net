@@ -1,0 +1,10 @@
+vendor/
+node_modules/
+.env
+.env*
+error_log
+log.csv
+**/config.ini
+.DS_Store
+uploads/
+assets/document/
